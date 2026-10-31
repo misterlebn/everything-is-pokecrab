@@ -1,0 +1,9 @@
+Range ici tes propres images (PNG avec fond transparent).
+Noms conseillés : blob.png, moussin.png, fougerol.png, sylvaron.png, braisil.png, fournaclaw.png,
+volcadrake.png, galopot.png, marelame.png, abyssaure.png, zapiot.png, voltigor.png, gonfloche.png,
+leviaflot.png, neantis.png, shine.png,
+gravillon.png, rocarmure.png, montagnor.png
+
+Puis ouvre index.html, cherche BUILTIN_SPRITES et enlève les // devant les lignes concernées.
+Format attendu : planche 4x4 (lignes : bas, gauche, droite, haut), comme tes planches actuelles.
+Pour des images uniques, remplace BUILTIN_FORMAT='4x4' par BUILTIN_FORMAT='single'.

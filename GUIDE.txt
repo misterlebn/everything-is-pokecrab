@@ -1,0 +1,25 @@
+EVERYTHING IS POKECRAB - GUIDE RAPIDE
+
+1. TESTER SUR TON ORDI
+   Ouvre le dossier dans VS Code (gratuit), installe l'extension "Live Server",
+   clic droit sur index.html > "Open with Live Server". Le jeu se recharge à chaque sauvegarde.
+
+2. OÙ MODIFIER QUOI (dans index.html, Ctrl+F pour chercher)
+   BUILTIN_SPRITES   tes images par défaut (voir sprites/A_LIRE.txt)
+   const SP={}       noms, familles, stades et tailles des créatures
+   const LINES=      PV, attaque, vitesse, nage de chaque famille
+   const SKILL=      compétences spéciales et leurs temps de recharge
+   AMMO_MAX          nombre de charges d'attaque, AMMO_RELOAD = recharge d'une charge
+   DASH_CD           recharge du dash
+   const TRACKS=     les musiques (notes, tempo)
+   const TXT=        tous les textes français et anglais
+   gameTime>=540     moment d'arrivée du boss (en secondes), G.level>=10 = niveau d'arrivée
+
+3. METTRE EN LIGNE GRATUITEMENT
+   - itch.io : compresse le dossier everything-is-pokecrab en .zip, crée un projet "HTML",
+     envoie le zip, coche "This file will be played in the browser".
+   - Netlify Drop (app.netlify.com/drop) : glisse le dossier, tu obtiens un lien.
+   - GitHub Pages : dépôt GitHub, envoie les fichiers, Settings > Pages.
+
+   Avant la mise en ligne publique : n'utilise que des images qui t'appartiennent
+   ou libres de droits dans le dossier sprites.
