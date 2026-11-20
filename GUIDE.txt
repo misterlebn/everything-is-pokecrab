@@ -1,25 +1,25 @@
-EVERYTHING IS POKECRAB - GUIDE RAPIDE
+EVERYTHING IS POKECRAB - GUIDE RAPIDE (V02.00.00)
 
 1. TESTER SUR TON ORDI
    Ouvre le dossier dans VS Code (gratuit), installe l'extension "Live Server",
    clic droit sur index.html > "Open with Live Server". Le jeu se recharge à chaque sauvegarde.
 
-2. OÙ MODIFIER QUOI (dans index.html, Ctrl+F pour chercher)
-   BUILTIN_SPRITES   tes images par défaut (voir sprites/A_LIRE.txt)
-   const SP={}       noms, familles, stades et tailles des créatures
-   const LINES=      PV, attaque, vitesse, nage de chaque famille
-   const SKILL=      compétences spéciales et leurs temps de recharge
-   AMMO_MAX          nombre de charges d'attaque, AMMO_RELOAD = recharge d'une charge
-   DASH_CD           recharge du dash
-   const TRACKS=     les musiques (notes, tempo)
+2. CONTENU DU DOSSIER
+   index.html               le jeu complet (un seul fichier)
+   sprites/Graphics/        planches de décor : Tilesets, Autotiles, Weather, Fogs
+   Les créatures, les icônes et les badges sont dessinés par le jeu : aucune image à fournir.
+
+3. OÙ MODIFIER QUOI (dans index.html, Ctrl+F pour chercher)
+   const PC_NAMES=   noms français et anglais des 33 créatures
    const TXT=        tous les textes français et anglais
-   gameTime>=540     moment d'arrivée du boss (en secondes), G.level>=10 = niveau d'arrivée
+   const NEWS=       le journal des mises à jour (courrier)
+   FB_CONFIG         projet Firebase (connexion, sauvegarde en ligne, avis)
+   MP_DB_URL         base de données du multijoueur
 
-3. METTRE EN LIGNE GRATUITEMENT
-   - itch.io : compresse le dossier everything-is-pokecrab en .zip, crée un projet "HTML",
-     envoie le zip, coche "This file will be played in the browser".
-   - Netlify Drop (app.netlify.com/drop) : glisse le dossier, tu obtiens un lien.
-   - GitHub Pages : dépôt GitHub, envoie les fichiers, Settings > Pages.
+4. MULTIJOUEUR
+   Le multijoueur utilise la Realtime Database du projet Firebase everything-is-pokecrab
+   (région europe-west1). Sans cette base, le jeu affiche « Serveur multijoueur indisponible ».
 
-   Avant la mise en ligne publique : n'utilise que des images qui t'appartiennent
-   ou libres de droits dans le dossier sprites.
+5. METTRE EN LIGNE
+   GitHub Pages : envoie les fichiers avec GitHub Desktop (Commit puis Push origin).
+   Le site se met à jour en une à deux minutes.
